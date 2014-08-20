@@ -159,7 +159,7 @@ import os
 print(os.getcwd())
 os.chdir(os.path.join("/home", "ym", "Documents"))
 
-filename = os.path.join("/home", "ym", "projects", "quick-python", "chap3", "myfile")
+filename = os.path.join("/home", "ym", "project", "quick-python", "chap3", "myfile")
 print(filename)
 
 f = open(filename, "r")
@@ -261,7 +261,7 @@ for file in filenames:
 import sys
 print(sys.path)
 
-os.chdir(os.path.join("/home", "ym", "projects", "quick-python", "chap3"))
+os.chdir(os.path.join("/home", "ym", "project", "quick-python", "chap3"))
 
 import wo
 wo.words_occur()
@@ -270,20 +270,14 @@ wo.words_occur()
 import imp
 imp.reload(wo)
 
+## オブジェクト指向プログラミング 
+import sh
+c1 = sh.Circle()
+c2 = sh.Circle()
+print(c1)
+print(c2)
+print(c2.area())
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+c2.move(5, 6)
+print(c2)
 
